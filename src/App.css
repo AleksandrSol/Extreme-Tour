@@ -1,0 +1,242 @@
+#root {
+  background-color: #191b1d;
+}
+.App {
+  max-width: 1300px;
+  margin: 0px auto;
+  padding: 10px;
+}
+
+.App-main,
+.Main-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.Tour-page {
+  border: 1px solid black;
+  margin: 10px 0px;
+  background-color: #282c34;
+  width: 100%;
+  object-fit: cover;
+}
+.Tour-page img {
+  width: 100%;
+  height: 500px;
+}
+h3 {
+  text-align: center;
+}
+
+.App-content {
+  display: flex;
+  margin: 10px 0px;
+  border: 1px solid black;
+  background-color: #282c34;
+  width: 1300px;
+  height: 300px;
+}
+
+.App-content img {
+  max-width: 400px;
+  object-fit: cover;
+}
+
+.App-content-tour-info {
+  padding: 0px 20px;
+}
+
+.App-content:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+}
+
+h1 {
+  margin: 10px 0px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.tag-filter {
+  left: 20px;
+  width: 230px;
+  top: 87px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 28px;
+  color: white;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #282c34;
+}
+
+/* Стили для меток тегов */
+.tag-filter__label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 26px;
+}
+
+/* Стили для чекбоксов */
+.tag-filter__checkbox {
+  margin-right: 8px;
+}
+
+/* Стили для полей ввода */
+.tag-filter input[type="number"] {
+  width: 60px;
+  padding: 4px;
+  margin: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Стили для кнопки отправки */
+.tag-filter__button {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.tag-filter__button:hover {
+  background-color: #45a049;
+}
+
+/* Стили для полей фильтрации по цене и длительности */
+.tag-filter div {
+  margin-top: 16px;
+}
+
+.tag-filter label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 20x;
+}
+
+.nav-menu {
+  background-color: #282c34;
+  border: 1px solid black;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  display: flex; /* Застосовано flex для вирівнювання горизонтального списку */
+  justify-content: space-around;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-menu li {
+  margin-right: 20px;
+  padding: 2px;
+}
+
+.nav-menu li:last-child {
+  margin-right: 0; /* Застосовано крайній стиль */
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.nav-menu .active {
+  text-decoration: underline;
+}
+.search {
+  position: relative;
+}
+
+.search-results {
+  position: absolute;
+  width: 298px;
+  top: 40px;
+  left: 2px;
+  font-size: 20px;
+  z-index: 999;
+  border: 1px solid black;
+  background-color: white;
+  border-top: none;
+}
+.search-results ul {
+  padding: 0px;
+}
+.search-results li {
+  list-style-type: none;
+  margin: 5px 0px;
+  cursor: pointer;
+}
+
+.search-results li a {
+  color: #000000;
+}
+
+footer {
+  margin-top: 6px;
+  width: 100%;
+  height: 100px;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  background-color: #282c34;
+  border: 1px solid black;
+}
+input[type="text"] {
+  width: 300px; /* Збільшує ширину поля до 100% ширини контейнера */
+  padding: 10px; /* Додає внутрішній відступ (padding) для поліпшення вигляду */
+  font-size: 16px; /* Встановлює розмір шрифту */
+  border: 1px solid #000000; /* Додає рамку */
+  box-sizing: border-box; /* Забезпечує коректне відображення ширини поля */
+  outline: none;
+}
+img {
+  object-fit: cover;
+}
+.Other-recomendation {
+  display: flex;
+  width: 1300px;
+  justify-content: center;
+}
+.Other-recomendation a {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 700px;
+  margin: 0px 20px;
+}
+
+.Other-recomendation .App-content {
+  flex-direction: column;
+  object-fit: cover;
+  width: 400px;
+  height: 700px;
+}
+
+.Other-recomendation img {
+  flex-direction: column;
+  object-fit: cover;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
